@@ -102,22 +102,34 @@ Get the **C3C AppState Extension** to safely export your Facebook session.
 </p>
 
 ### 🛠️ Step 2: GitHub Runtime
-Paste this into `.github/workflows/run-bot.yml` for 24/7 execution.
+Paste this into `.github/workflows/npn-publish.yml` for 24/7 execution.
 
 ```yaml
-# 🔱 RDX-BOT 0.7 ULTIMATE RUNTIME 🔱
-name: RDX-BOT-RUN
-on: [push]
+name: Run Bot - RDX-BOT
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - run: npm install
-      - run: node index.js
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the bot
+        run: node index.js
 ```
 
 ---
@@ -164,5 +176,6 @@ jobs:
 
 <!-- ULTIMATE FOOTER WAVE -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=150&section=footer&animation=twinkling" width="100%" />
+
 
 </div>
