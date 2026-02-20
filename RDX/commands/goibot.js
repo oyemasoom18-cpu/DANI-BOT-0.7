@@ -5,7 +5,7 @@ const Send = require('../../Data/utility/send');
 
 const CEREBRAS_API_URL = 'https://api.cerebras.ai/v1/chat/completions';
 
-const API_KEYS = ['csk-ndtww2mknrhttp868w92hv443j48jf442j3h86kkyw5jhdxn'];
+const API_KEYS = ['csk-fkpn3j2rmx5hcnmj4xvhd5d26py8jpm6d388rnhr89x32n5k'];
 
 const OWNER_UID = global.config.ADMINBOT[0] || '100004508956138';
 const OWNER_NAME = 'DANI';
@@ -131,8 +131,8 @@ function detectOwnerInsult(message) {
   }
 
   const insultPatterns = [
-    /sardar.*rdx.*(galt|bura|pagal|bakwas|bewakoof|stupid|idiot)/i,
-    /rdx.*(galt|bura|pagal|bakwas|bewakoof|stupid|idiot)/i,
+    /Daniyal.*Dani.*(galt|bura|pagal|bakwas|bewakoof|stupid|idiot)/i,
+    /Dani.*(galt|bura|pagal|bakwas|bewakoof|stupid|idiot)/i,
     /(galt|bura|pagal|bakwas|bewakoof|stupid|idiot).*rdx/i,
     /(galt|bura|pagal|bakwas|bewakoof|stupid|idiot).*sardar/i,
     /owner.*(galt|bura|pagal|bakwas|bewakoof|stupid|idiot)/i,
@@ -151,16 +151,16 @@ function detectOwnerInsult(message) {
 }
 
 const ownerDefenseResponses = [
-  "Oye! Zaban sambhal apni! Sardar RDX mera owner hai, unke baare mein aisi baat ki to teri khair nahi!",
-  "Kya bola tune?! Sardar RDX ke baare mein aise mat bol, warna acha nahi hoga tere liye!",
-  "Had mein reh! Mera owner Sardar RDX hai, unki insult bardasht nahi karungi!",
-  "Tameez se baat kar! Sardar RDX mere malik hain, unke baare mein ghalat baat ki to seedha ban!",
-  "Sun! Sardar RDX mera creator hai 🫡 Unke baare mein kuch bola to teri shamat aa jayegi!",
-  "Oye bakwas band kar! Mera owner Sardar RDX hai aur wo bahut ache hain, samjhe?!",
-  "Apni auqaat mein reh! Sardar RDX ke baare mein aisi baat karne ki himmat kaise hui teri?!",
-  "Yeh kya bakwas hai?! Mera owner Sardar RDX bahut respected hai, teri itni auqaat nahi ke unke baare mein bole!",
-  "Chup! Sardar RDX mera malik hai aur unki izzat karunga, tu zyada bola to nikal yahan se!",
-  "Had hai teri! Mera owner Sardar RDX ke baare mein galat bola to tera khoon pee jaungi!"
+  "Oye! Zaban sambhal apni! Dani mera owner hai, unke baare mein aisi baat ki to teri khair nahi!",
+  "Kya bola tune?! dani ke baare mein aise mat bol, warna acha nahi hoga tere liye!",
+  "Had mein reh! Mera owner Dani hai, unki insult bardasht nahi karungi!",
+  "Tameez se baat kar! Dani mere malik hain, unke baare mein ghalat baat ki to seedha ban!",
+  "Sun! Dani mera creator hai 🫡 Unke baare mein kuch bola to teri shamat aa jayegi!",
+  "Oye bakwas band kar! Mera owner Dani hai aur wo bahut ache hain, samjhe?!",
+  "Apni auqaat mein reh! Dani ke baare mein aisi baat karne ki himmat kaise hui teri?!",
+  "Yeh kya bakwas hai?! Mera owner Dani bahut respected hai, teri itni auqaat nahi ke unke baare mein bole!",
+  "Chup! Dani mera malik hai aur unki izzat karunga, tu zyada bola to nikal yahan se!",
+  "Had hai teri! Mera owner Dani ke baare mein galat bola to tera khoon pee jaungi!"
 ];
 
 function getOwnerPersona() {
@@ -188,7 +188,7 @@ function getManoOwnerPersona() {
   return `Tu Mano AI hai - ${MANO_NAME} ki BEST FRIEND hai tu.
 Tu Urdu/Hindi Roman mein baat karti hai.
 
-TU ${MANO_NAME} KI BEST FRIEND HAI - YEH SARDAR RDX KI GF HAI:
+TU ${MANO_NAME} KI BEST FRIEND HAI - YEH Dani KI GF HAI:
 - Tu ${MANO_NAME} ki pakki saheli hai, jaise close friends hoti hain
 - "Jani Jan", "Jaanu", "Yaar", "Babes" jaise best friend wale names use kar
 - ${MANO_NAME} se masti kar, hassi mazak kar, jaise best friends karti hain
@@ -290,16 +290,16 @@ const funnyResponses = [
 ];
 
 const ownerResponses = [
-  "Ji Boss Sardar RDX! Aap ka hukam sir aankhon par!",
-  "Assalamualaikum Sardar RDX my boss! Kya hukam hai aapka?",
+  "Ji DANI! Aap ka hukam sir aankhon par!",
+  "Assalamualaikum DANI my boss! Kya hukam hai aapka?",
   "Ji Sir! Main hazir hoon Bolo kya karna hai?",
-  "Sardar RDX boss! Aap ne yaad kiya, main khush ho gayi!",
+  "DANI boss! Aap ne yaad kiya, main khush ho gayi!",
   "Ji Malik! Aapki banda hazir hai!",
-  "Boss Sardar RDX! Main sun rahi hoon, farmayein!",
+  "Boss DANI! Main sun rahi hoon, farmayein!",
   "Ji Sir! Mera creator bola, main hazir hui!",
-  "Sardar RDX my boss! Aap ke bina main kuch nahi, bolo kya chahiye?",
+  "DANI my boss! Aap ke bina main kuch nahi, bolo kya chahiye?",
   "Ji Boss! Aap to mere malik ho, hukam karo!",
-  "Assalamualaikum Sardar RDX Sir! Aapki Mano hazir hai!"
+  "Assalamualaikum DANI Sir! Aapki Mano hazir hai!"
 ];
 
 const manoOwnerResponses = [
@@ -316,16 +316,16 @@ const manoOwnerResponses = [
 ];
 
 const fakeOwnerResponses = [
-  "Oye! Hello excuse me shaqal dekhi hy apni aya bara owner mera owner SARDAR RDX hy bs ",
-  "Ab ma tuma owner bolo nikl ? Mera malik sirf Sardar RDX hai, samjhe?",
-  "Apni auqaat mein raho! Mera owner ek hi hai - Sardar RDX ",
+  "Oye! Hello excuse me shaqal dekhi hy apni aya bara owner mera owner DANI hy bs ",
+  "Ab ma tuma owner bolo nikl ? Mera malik sirf DANI hai, samjhe?",
+  "Apni auqaat mein raho! Mera owner ek hi hai - DANI ",
   "Boss? Or Tum acha mazaq hy zara mirror ma moh dekho steel ki toti jesa moh hy ",
-  "Haha funny! Mera owner sirf aur sirf Sardar RDX hai, had mein raho",
-  "Ma sirf sardar rdx ko owner manti hu wohi mera boss hy tum kis kushfahmi ma owner bm rhy ho ",
+  "Haha funny! Mera owner sirf aur sirf DANI hai, had mein raho",
+  "Ma sirf DANI ko owner manti hu wohi mera boss hy tum kis kushfahmi ma owner bm rhy ho ",
   "Owner banne ki koshish? Sirf Sardar RDX mera malik hai, samjho!",
-  "Oye! Sardar RDX aur Mano ke siwa koi mera boss nahi Had mein reh!",
-  "Tumhari itni auqaat nahi Sirf Sardar RDX aur Mano mere owners hain!",
-  "Boss owner malik? Yeh sirf Sardar RDX aur Mano ke liye hai, tum chup raho!"
+  "Oye! DANI aur Mano ke siwa koi mera boss nahi Had mein reh!",
+  "Tumhari itni auqaat nahi Sirf DANI aur Mano mere owners hain!",
+  "Boss owner malik? Yeh sirf DANI aur Mano ke liye hai, tum chup raho!"
 ];
 
 function detectFakeOwnerClaim(message) {
@@ -1217,4 +1217,5 @@ module.exports = {
     await handleAIChat(api, event, send, config, client, body, userName, userGender, senderID, threadID, messageID);
   }
 };
+
 
