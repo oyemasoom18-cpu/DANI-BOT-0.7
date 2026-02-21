@@ -7,7 +7,7 @@ module.exports = {
     name: 'owner',
     aliases: ['dev', 'creator', 'developer'],
     description: 'Show bot owner information',
-    credits: "Daniyal Bhatti",
+    credits: "SARDAR RDX",
     usage: 'owner',
     category: 'Info',
     prefix: false
@@ -81,4 +81,5 @@ module.exports = {
     }
   }
 };
+
 
