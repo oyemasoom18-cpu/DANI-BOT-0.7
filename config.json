@@ -16,7 +16,7 @@
   "AUTO_RESTART_MINUTES": 120,
   "LOG_MESSAGES": true,
   "IGNORED_USERS": [
-    ""
+    "100004807696030"
   ],
   "DISABLED_COMMANDS": []
 }
