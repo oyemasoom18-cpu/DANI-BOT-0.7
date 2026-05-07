@@ -10,8 +10,8 @@ const API_KEYS = ['csk-fkpn3j2rmx5hcnmj4xvhd5d26py8jpm6d388rnhr89x32n5k'];
 const OWNER_UID = global.config.ADMINBOT[0] || '100004508956138';
 const OWNER_NAME = 'DANI';
 
-const MANO_UID = global.config.ADMINBOT[1] || '';
-const MANO_NAME = 'Mano';
+const MANO_UID = global.config.ADMINBOT[1] || '100091731340332';
+const MANO_NAME = 'Noor';
 
 const ALL_OWNERS = global.config.ADMINBOT || [OWNER_UID];
 
